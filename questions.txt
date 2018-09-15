@@ -31,5 +31,3 @@ Before the creation of the new service can actually start, it is important to fi
 During this process, it's important to keep in mind that the ultimate goal is to always move in the direction of removing dependencies from the monolithic application. In cases where avoiding service dependencies means adding calls back to the monolith, it becomes necessary to expose a new API layer.
 
 Once these subsystems have been successfully separated to their own services and the approach has been validated, the more difficult task of moving out services that have user facing components or that need a separate data source can be attempted. All services should be set up as facade services to provide developer friendly APIs and shared data between services should remain in one schema/storage system. Overall, the goal should always be to move from the macro to micro and migrating in atomic evolution steps. In other words, begin with an analysis of the entire app, come up with a plan of attack, then begin moving the smallest piece first, making sure that every time a decision is made to move some code into its own separate service, it is an all or nothing move.
-
-Finally, 
