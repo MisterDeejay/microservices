@@ -1,12 +1,10 @@
+# Microservices
 The following is a short write up on the pros and cons of taking a microservice approach to web development. It may not be exhaustive, but it an attempt to give someone familiar with the approach a solid base of understanding and potential argument for why moving to a microservice architecture might be the right decision and what challenges one might face. The second part of the write up is an attempt to give someone an overview of the steps to take when migrating from a monolith application to a microservice architecture.
 
 [Microservice Pros](./README.md#pros)
-
 [Microservice Cons](./README.md#cons)
+[Moving from a Monolith to a Microservices: The Guide](./README.md#steps)
 
-[Moving from a Monoth to a Microservice Approach](./README.md#steps)
-
-# What is the proc / cons of using microservices, from your point of view?
 ## Pros
 The use of microservices are one of the more recent advancements seen in web development architecture. The design pattern was developed as a response to the proliferation of monolith applications seen at many companies. A monolith application is a piece of software that contains all the code connected to the business, with one database and many subsystems holding a number of various responsibilities. By definition, the microservice design pattern results in a collection of loosely coupled services, with the division between each service being based on functionality.
 
@@ -25,8 +23,8 @@ Separate services also means more points of failure and potentially unsafe commu
 
 In addition to reduced transaction safety over networks, you also have to worry about unsafe distributed communication as handling callbacks becomes more difficult. What happens when a transaction rolls back, but the downstream microservice has already been notified? Now that messages are being sent asynchronously over a network, your code must be built with that in mind. Microservice architecture also suffers from a performance hit to the the network overhead and HTTP (de)serialization. Data redundancy and data synchronization practices like caching and sharding, however, can help to minimize the performance loss. Refactoring can also be more difficult, particularly when moving code between microservices. 
 
-# Q2. Please describe steps to split monolithic application into the microservices
-## Steps
+## Moving from a Monolith to Microservices
+### Steps
 When splitting a monolithic application, the number one driver should be decoupling capabilities to release them independently. The first step in this process is to identify the code for separation. You want to start with the edge services that are the most decoupled. This identification can be done through static analysis tools, like RubyCritic, to find naturally isolated code. Other good candidates for service separation are:
 1) subsystems that require the fewest number of changes to client facing applications,
 2) subsystems that don't need a data source, and
