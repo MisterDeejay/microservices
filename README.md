@@ -1,7 +1,9 @@
 The following is a short write up on the pros and cons of taking a microservice approach to web development. It may not be exhaustive, but it an attempt to give someone familiar with the approach a solid base of understanding and potential argument for why moving to a microservice architecture might be the right decision and what challenges one might face. The second part of the write up is an attempt to give someone an overview of the steps to take when migrating from a monolith application to a microservice architecture.
 
 [Microservice Pros](./README.md#pros)
+
 [Microservice Cons](./README.md#cons)
+
 [Moving from a Monoth to a Microservice Approach](./README.md#steps)
 
 # What is the proc / cons of using microservices, from your point of view?
