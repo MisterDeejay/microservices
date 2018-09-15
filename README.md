@@ -1,9 +1,9 @@
 # Microservices
 The following is a short write up on the pros and cons of taking a microservice approach to web development. It may not be exhaustive, but it an attempt to give someone familiar with the approach a solid base of understanding and potential argument for why moving to a microservice architecture might be the right decision and what challenges one might face. The second part of the write up is an attempt to give someone an overview of the steps to take when migrating from a monolith application to a microservice architecture.
 
-[Microservice Pros](./README.md#pros)
-[Microservice Cons](./README.md#cons)
-[Moving from a Monolith to a Microservices: The Guide](./README.md#steps)
+* [Microservice Pros](./README.md#pros)
+* [Microservice Cons](./README.md#cons)
+* [Moving from a Monolith to a Microservices: The Guide](./README.md#steps)
 
 ## Pros
 The use of microservices are one of the more recent advancements seen in web development architecture. The design pattern was developed as a response to the proliferation of monolith applications seen at many companies. A monolith application is a piece of software that contains all the code connected to the business, with one database and many subsystems holding a number of various responsibilities. By definition, the microservice design pattern results in a collection of loosely coupled services, with the division between each service being based on functionality.
